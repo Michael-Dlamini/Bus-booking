@@ -1,0 +1,41 @@
+db tut_bus_booking
+
+tables
+1 student
+2 bus_admin
+3 reservation
+
+create table tut_student(
+stu_id int(10) primary key auto_increment ,
+stu_name text not null,
+stu_surname text not null,
+stu_number int(10) not null,
+stu_email text not null,
+stu_campus text not null,
+stu_gender text not null,
+stu_faculty text not null,
+stu_password text not null
+);
+
+
+
+create table bus_admin(
+ad_id int(10) primary key auto_increment ,
+ad_name text not null,
+ad_surname text not null,
+ad_staffno int(10) not null,
+ad_email text not null,
+ad_campus text not null,
+ad_password text not null
+);
+
+
+create table seat_reservation(
+st_id int(10) primary key auto_increment ,
+st_student_surname text not null,
+st_student_id int(10) not null,
+st_student_number int(10) not null,
+st_start_and_destination text not null,
+st_time time not null,
+st_date date not null
+);

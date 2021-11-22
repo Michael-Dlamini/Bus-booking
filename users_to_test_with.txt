@@ -1,0 +1,9 @@
+Student
+
+student num:217146380
+password:a
+
+Admin
+
+staffno:217144638
+password:a
